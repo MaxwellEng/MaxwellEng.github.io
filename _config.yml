@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>告白网页</title>
+  <title>致思妍的一封信</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -25,22 +25,18 @@
       background: rgba(0, 0, 0, 0.7);
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      text-align: center;
+      text-align: left;
+      position: relative;
     }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: #e91e63;
-    }
-    p {
+    .letter {
       font-size: 1.2em;
       margin-bottom: 20px;
     }
     .photo-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin: 30px 0;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      text-align: right;
     }
     .photo-container img {
       width: 150px;
@@ -67,34 +63,35 @@
       background-color: #c2185b;
     }
     audio {
-      margin-top: 20px;
-      width: 100%;
-      max-width: 400px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 100px;
+      opacity: 0.8;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>致我最爱的你</h1>
-    <div class="photo-container">
-      <img src="your-photo.jpg" alt="你的照片">
-      <img src="her-photo.jpg" alt="她的照片">
-    </div>
-    <p>我很感谢上天让我们相遇，让我们踏上爱的旅途。你是我人生中降临的第二位<span class="highlight">angel</span>，你温柔、善良、有爱、有活力还有很多可爱的<span class="highlight">mind</span>。</p>
-    <p>我生命中的第一个<span class="highlight">angel</span>是我妈妈，她把我带到世上，她温柔又善良，她有着虔诚的信仰，时时感化我。感谢你们的出现，感动和温暖着我的内心 and my soul。</p>
-    <p>我一直在想什么是爱，现在的我觉得爱就是我们对待世界的方式，只要我们真诚且善待，爱就会无处不在。</p>
-    <p>如今外面的世界常常危险且疯狂，如果说人生旅途注定不会是一帆风顺的，让我拾起勇气拉你进入我人生旅途的缘由，是我想 只要我们灵心相通，一起爱和被爱，我们可以创造一片<span class="highlight">universe</span>，那是一个可以守护彼此心灵的“乌邦图”。</p>
-    <p>我无法预知生命旅途的长度，但不管世界再危险，也永远有我、有爱站在你身边。</p>
-    <p>这段表达爱意的话我想了好久，因为我怕现在写完了，以后向你求婚的时候就写不出更好的桥段了。</p>
-    <p>我想说<br>
-      感谢老天把你带到我身边<br>
-      感谢你 谢谢感动和温暖了我的内心<br>
-      <span class="highlight">你愿意做我的女朋友和灵魂伴侣吗？</span></p>
-    <a href="#" class="button">点击这里接受我的告白</a>
     <audio controls autoplay>
-      <source src="your-song.mp3" type="audio/mpeg">
-      您的浏览器不支持音频播放。
+      <source src="love-song.mp3" type="audio/mpeg">
     </audio>
+    <div class="letter">
+      <p>思妍：</p>
+      <p>我很感谢上天让我们相遇，让我们踏上爱的旅途。你是我人生中降临的第二位<span class="highlight">angel</span>，你温柔、善良、有爱、有活力还有很多可爱的<span class="highlight">mind</span>。</p>
+      <p>我生命中的第一个<span class="highlight">angel</span>是我妈妈，她把我带到世上，她温柔又善良，她有着虔诚的信仰，时时感化我。感谢你们的出现，感动和温暖着我的内心 and my soul。</p>
+      <p>我一直在想什么是爱，现在的我觉得爱就是我们对待世界的方式，只要我们真诚且善待，爱就会无处不在。如今外面的世界常常危险且疯狂，如果说人生旅途注定不会是一帆风顺的，让我拾起勇气拉你进入我人生旅途的缘由，是我想，只要我们灵心相通，一起爱和被爱，我们可以创造一片<span class="highlight">universe</span>，那是一个可以守护彼此心灵的“乌邦图”。</p>
+      <p>我无法预知生命旅途的长度，但不管世界再危险，也永远有我、有爱站在你身边。</p>
+      <p>这段表达爱意的话我想了好久，因为我怕现在写完了，以后向你求婚的时候就写不出更好的桥段了。</p>
+      <p>我想说：<br>
+        感谢老天把你带到我身边<br>
+        感谢你，谢谢感动和温暖了我的内心<br>
+        <span class="highlight">你愿意做我的女朋友和灵魂伴侣吗？</span></p>
+      <p>龙仔</p>
+    </div>
+    <div class="photo-container">
+      <img src="image.png" alt="">
+    </div>
   </div>
 </body>
 </html>
